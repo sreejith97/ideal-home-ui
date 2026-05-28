@@ -5,14 +5,14 @@ import { CircleArrowRight } from "lucide-react";
 const Hero = () => {
   return (
     <section
-      className=" relative h-screen bg-cover bg-center bg-no-repeat py-16 md:py-24 lg:py-32 "
+      className=" relative h-screen bg-cover bg-center bg-no-repeat py-16 md:py-24 lg:py-32  "
       style={{
         backgroundImage: "url('/assets/hero_background.jpg')",
       }}
     >
       <div className="absolute inset-0 bg-black/40" />
 
-      <div className="w-[423px]  h-[423px] sm:w-[480px] md:w-[540px] lg:w-[632px] rounded-[10px] px-[30px] py-[46px] gap-[21px] bg-[#0E0B0B75] backdrop-blur-[4px]">
+      <div className="absolute top-[248px] left-[143px] w-[423px]  h-[423px] sm:w-[480px] md:w-[540px] lg:w-[632px] rounded-[10px] px-[30px] py-[46px] gap-[21px] bg-[#0E0B0B75] backdrop-blur-[4px]">
         <div className="relative z-10 max-w-4xl text-white">
           <h1 className="font-sans font-bold text-[48px] leading-[120%] tracking-normal align-middle max-w-[578px]">
             Design & Delivery of Your Villa Interiors{" "}
