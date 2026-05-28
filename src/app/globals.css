@@ -5,6 +5,7 @@
   --font-sans: var(--font-lexend);
 --font-inter: var(--font-inter);
   --color-primary: #57B7C0;
+  --text-primary: #231F20;
 }
 
 * {
