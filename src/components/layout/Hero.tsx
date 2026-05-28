@@ -1,4 +1,6 @@
 import Button from "@/components/ui/Button";
+// circle-arrow-right
+import { CircleArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -10,26 +12,24 @@ const Hero = () => {
     >
       <div className="absolute inset-0 bg-black/40" />
 
-      <div className="w-[423px] h-[632px] sm:w-[480px] md:w-[540px] lg:w-[632px] rounded-[10px] px-[30px] gap-[21px] bg-[#0E0B0B75] backdrop-blur-[4px]">
+      <div className="w-[423px]  h-[423px] sm:w-[480px] md:w-[540px] lg:w-[632px] rounded-[10px] px-[30px] py-[46px] gap-[21px] bg-[#0E0B0B75] backdrop-blur-[4px]">
         <div className="relative z-10 max-w-4xl text-white">
           <h1 className="font-sans font-bold text-[48px] leading-[120%] tracking-normal align-middle max-w-[578px]">
             Design & Delivery of Your Villa Interiors{" "}
             <span className="text-primary h-[45px]">Made Simple</span>
           </h1>
 
-          <p className="mt-[19px] px-[8px] py-[16px] max-w-[578px] font-inter font-medium text-base sm:text-[17px] md:text-[18px] lg:text-[18px] leading-[150%] tracking-normal text-neutral-200">
+          <p className="mt-[16px]  py-[2px] max-w-[578px] font-inter font-medium text-base sm:text-[17px] md:text-[18px] lg:text-[18px] leading-[150%] tracking-normal text-neutral-200">
             Kitchens, closets, doors, and premium uPVC windows designed,
             manufactured, and installed by one trusted Emirati factory.
           </p>
 
-          <div className="mt-8 flex flex-wrap gap-4">
-            {/* <button className="rounded-xl bg-white px-6 py-3 text-black">
-              Start Nows
-            </button> */}
-
+          <div className="mt-[20px] flex flex-wrap gap-4">
             <Button
               text="Get Your FREE 3D Design Now"
-              className="w-[329px] h-[52px] rounded-[10px] gap-[10px] px-[20px] py-[12px] bg-white sm:w-[280px] md:w-[320px] lg:w-[329px] font-inter font-bold text-base md:text-[18px] leading-[24px] text-center "
+              className="w-[329px] h-[52px] rounded-[10px] gap-[10px] px-[14px] py-[14px] bg-white sm:w-[280px] md:w-[320px] lg:w-[329px] font-inter font-bold text-base md:text-[18px] leading-[24px] text-center "
+              icon={<CircleArrowRight className="text-[24px]" />}
+              iconPosition="right"
             />
           </div>
         </div>
