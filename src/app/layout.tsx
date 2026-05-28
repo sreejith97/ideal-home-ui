@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
-import { Lexend } from "next/font/google";
+import { Lexend, Inter } from "next/font/google";
 import "./globals.css";
 
 const lexend = Lexend({
   variable: "--font-lexend",
+  subsets: ["latin"],
+});
+
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
@@ -18,7 +23,11 @@ type RootLayoutProps = {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en" className={lexend.variable} suppressHydrationWarning>
+    <html
+      lang="en"
+      className={`${lexend.variable} ${inter.variable}`}
+      suppressHydrationWarning
+    >
       <body className="min-h-screen font-sans antialiased">{children}</body>
     </html>
   );
