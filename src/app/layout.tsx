@@ -1,14 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Lexend } from "next/font/google";
 import "./globals.css";
 
-const sans = Geist({
-  variable: "--font-sans",
-  subsets: ["latin"],
-});
-
-const mono = Geist_Mono({
-  variable: "--font-mono",
+const lexend = Lexend({
+  variable: "--font-lexend",
   subsets: ["latin"],
 });
 
@@ -23,12 +18,8 @@ type RootLayoutProps = {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html
-      lang="en"
-      className={`${sans.variable} ${mono.variable}`}
-      suppressHydrationWarning
-    >
-      <body className="min-h-screen antialiased">{children}</body>
+    <html lang="en" className={lexend.variable} suppressHydrationWarning>
+      <body className="min-h-screen font-sans antialiased">{children}</body>
     </html>
   );
 }
