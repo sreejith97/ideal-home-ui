@@ -1,7 +1,10 @@
 @import "tailwindcss";
 
+
 @theme {
   --font-sans: var(--font-lexend);
+
+  --color-primary: #57B7C0;
 }
 
 * {
