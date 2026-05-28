@@ -39,7 +39,7 @@ export default function Button({
         transition-all
         duration-300
         bg-black
-        text-white
+        text-text-primary
         hover:opacity-90
         disabled:cursor-not-allowed
         disabled:opacity-50
