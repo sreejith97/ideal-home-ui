@@ -40,9 +40,7 @@ export default function Button({
         duration-300
         bg-black
         text-text-primary
-        hover:opacity-90
-        disabled:cursor-not-allowed
-        disabled:opacity-50
+        
         `,
         className,
       )}
