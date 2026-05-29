@@ -5,6 +5,7 @@ import Hero from "@/components/layout/Hero";
 import HowItWorks from "@/components/layout/HowItWorks";
 import Navbar from "@/components/layout/Navbar";
 import Solution from "@/components/layout/Solution";
+import WhyChoose from "@/components/layout/WhyChoose";
 import Image from "next/image";
 
 export default function HomePage() {
@@ -16,6 +17,7 @@ export default function HomePage() {
       <Approach />
       <HowItWorks />
       <Gallery />
+      <WhyChoose />
       <Footer />
     </main>
   );
