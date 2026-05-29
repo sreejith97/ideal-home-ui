@@ -2,9 +2,15 @@ import React from "react";
 
 const HowItWorks = () => {
   return (
-    <section className="bg-white py-[100px] lg:py-28">
-      <div className="mx-auto max-w-6xl rounded-[2rem] bg-secondary px-6 py-8 sm:px-8 sm:py-10 lg:px-[38px] lg:py-[50px] text-white">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-stretch">
+    <section className="bg-white py-[100px] lg:py-28 ">
+      <div
+        className=" relative overflow-hidden mx-auto max-w-6xl rounded-[2rem] bg-secondary px-6 py-8 sm:px-8 sm:py-10 lg:px-[38px] lg:py-[50px] text-white bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/assets/hero_background.jpg')",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" />
+        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-stretch">
           <div className="flex flex-col gap-6 justify-center">
             <div className="flex flex-col">
               <h2>Design Your Villa Interiors</h2>
