@@ -1,5 +1,6 @@
 import Approach from "@/components/layout/Approach";
 import Footer from "@/components/layout/Footer";
+import Gallery from "@/components/layout/Gallery";
 import Hero from "@/components/layout/Hero";
 import HowItWorks from "@/components/layout/HowItWorks";
 import Navbar from "@/components/layout/Navbar";
@@ -14,6 +15,7 @@ export default function HomePage() {
       <Solution />
       <Approach />
       <HowItWorks />
+      <Gallery />
       <Footer />
     </main>
   );
