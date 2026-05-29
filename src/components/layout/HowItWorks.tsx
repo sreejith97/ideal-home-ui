@@ -27,6 +27,12 @@ const HowItWorks = () => {
                 <span>icon</span> No Delays
               </div>
             </div>
+
+            <div className="flex mt-2">
+              <button className="flex items-center gap-2">
+                Start Your 3D Interior Design <span></span>
+              </button>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
