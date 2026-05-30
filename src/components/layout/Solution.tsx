@@ -44,7 +44,6 @@ const Solution = () => {
     gsap.registerPlugin(ScrollTrigger);
 
     const ctx = gsap.context(() => {
-      // 1. Zoom animation timeline
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: ".zoom-trigger",
@@ -62,7 +61,6 @@ const Solution = () => {
         )
         .to(".svg-overlay", { opacity: 0, duration: 1 }, "-=0.8");
 
-      // 2. Cards entrance animation
       const cards = gsap.utils.toArray(".solution-card");
       cards.forEach((card) => {
         gsap.fromTo(
@@ -91,10 +89,8 @@ const Solution = () => {
       ref={containerRef}
       className="relative bg-neutral-950 font-sans text-neutral-200"
     >
-      {/* Absolute trigger for exact scroll duration of the zoom */}
       <div className="zoom-trigger absolute top-0 left-0 w-full h-[150vh] pointer-events-none" />
 
-      {/* Sticky Zoom Background */}
       <div className="sticky top-0 h-screen w-full overflow-hidden pointer-events-none">
         <div
           className="background-image absolute inset-0 bg-cover bg-center opacity-0"
@@ -161,14 +157,11 @@ const Solution = () => {
         </div>
       </div>
 
-      {/* Spacer to push content down so it appears after some scrolling */}
       <div className="h-[50vh] w-full pointer-events-none" />
 
-      {/* Main Content Area - Scrolls naturally over the sticky background */}
       <div className="content-area relative z-10 w-full pb-32">
         <div className="max-w-[1348px] mx-auto w-full px-4">
-          {/* Heading */}
-          <div className="relative z-30 pt-20 pb-8 mb-12">
+          <div className="relative z-[-10] pt-20 pb-8 mb-12">
             <div className="text-center">
               <h2 className="font-lexend font-bold text-[36px] sm:text-[42px] md:text-[48px] lg:text-[48px] leading-[120%] tracking-normal text-center align-middle mb-2.5 text-white">
                 Our Solutions
@@ -183,7 +176,6 @@ const Solution = () => {
             </div>
           </div>
 
-          {/* Cards Grid */}
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 mt-12 relative z-20">
             {solutionsData.map((item) => (
               <div
