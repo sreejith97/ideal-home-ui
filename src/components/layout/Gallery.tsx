@@ -1,6 +1,8 @@
 import Button from "@/components/ui/Button";
 import Image from "next/image";
 
+const FILTERS = ["Kitchen", "Door", "Closet", "uPVC Windows"];
+
 const Gallery = () => {
   return (
     <section className="bg-[#222222] py-12 md:py-16 lg:py-24 mb-[60px] md:mb-[80px] lg:mb-[100px]">
@@ -15,7 +17,7 @@ const Gallery = () => {
           <button className="bg-white text-black px-4 py-1.5 md:px-6 md:py-2 rounded-[8px] text-[13px] md:text-sm font-medium transition-all">
             All
           </button>
-          {["Kitchen", "Door", "Closet", "uPVC Windows"].map((filter) => (
+          {FILTERS.map((filter) => (
             <button
               key={filter}
               className="bg-transparent border border-white/40 text-white px-4 py-1.5 md:px-6 md:py-2 rounded-[8px] text-[13px] md:text-sm font-medium hover:bg-white/10 transition-all"

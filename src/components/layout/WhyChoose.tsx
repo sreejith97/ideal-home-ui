@@ -1,7 +1,7 @@
 import { CheckCircle2, Phone } from "lucide-react";
 import Image from "next/image";
 
-const benefits = [
+const BENEFITS = [
   "One factory for kitchens, wardrobes, doors, and premium window systems.",
   "Fast 3D design before production",
   "Precision manufacturing with European machinery",
@@ -32,7 +32,7 @@ const WhyChoose = () => {
             </h2>
 
             <ul className="flex flex-col gap-2.5 mt-2 lg:mt-0">
-              {benefits.map((text, index) => (
+              {BENEFITS.map((text, index) => (
                 <li key={index} className="flex items-start gap-3 sm:gap-4">
                   <div className="flex-shrink-0 mt-0.5 sm:mt-1">
                     <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-white fill-white/20" />
