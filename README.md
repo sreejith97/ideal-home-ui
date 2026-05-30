@@ -37,7 +37,7 @@ Smooth scroll-triggered animations powered by GSAP. Fully responsive across mobi
    Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 4. **Hosted Link**
-   Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   Open [ideal-home-ui.vercel.app](ideal-home-ui.vercel.app) with your browser to see the result.
 
 ## Optimizations
 
