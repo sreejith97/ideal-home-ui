@@ -1,6 +1,6 @@
 import { Menu, Phone } from "lucide-react";
-import Button from "@/components/ui/Button";
 import Link from "next/link";
+import Button from "../ui/Button";
 
 const Navbar = () => {
   return (

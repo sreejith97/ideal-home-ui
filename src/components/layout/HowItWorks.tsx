@@ -5,8 +5,8 @@ import {
   ImagePlay,
   PencilRuler,
 } from "lucide-react";
-import Button from "@/components/ui/Button";
 import Image from "next/image";
+import Button from "../ui/Button";
 
 const HowItWorks = () => {
   return (

@@ -1,6 +1,6 @@
-import Button from "@/components/ui/Button";
 import { CircleArrowRight } from "lucide-react";
 import Image from "next/image";
+import Button from "../ui/Button";
 
 const Hero = () => {
   return (

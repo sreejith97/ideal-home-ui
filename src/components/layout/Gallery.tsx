@@ -1,5 +1,5 @@
-import Button from "@/components/ui/Button";
 import Image from "next/image";
+import Button from "../ui/Button";
 
 const FILTERS = ["Kitchen", "Door", "Closet", "uPVC Windows"];
 
