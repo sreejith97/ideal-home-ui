@@ -87,7 +87,7 @@ const Solution = () => {
   return (
     <div
       ref={containerRef}
-      className="relative bg-neutral-950 font-sans text-neutral-200 mb-[100px]"
+      className="relative bg-neutral-950 font-sans text-neutral-200 mb-[60px] md:mb-[80px] lg:mb-[100px]"
     >
       <div className="zoom-trigger absolute top-0 left-0 w-full h-[150vh] pointer-events-none" />
 
@@ -176,16 +176,16 @@ const Solution = () => {
 
       <div className="h-[50vh] w-full pointer-events-none" />
 
-      <div className="content-area relative z-10 w-full pb-32">
-        <div className="max-w-[1348px] mx-auto w-full px-4">
-          <div className="relative z-[-10] pt-20 pb-8 mb-12">
+      <div className="content-area relative z-10 w-full pb-16 md:pb-24 lg:pb-32">
+        <div className="max-w-[1348px] mx-auto w-full px-4 md:px-6">
+          <div className="relative z-[-10] pt-12 md:pt-16 lg:pt-20 pb-6 lg:pb-8 mb-8 lg:mb-12">
             <div className="text-center">
-              <h2 className="font-lexend font-bold text-[36px] sm:text-[42px] md:text-[48px] lg:text-[48px] leading-[120%] tracking-normal text-center align-middle mb-2.5 text-white">
+              <h2 className="font-lexend font-bold text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] leading-[120%] tracking-normal text-center align-middle mb-2.5 text-white">
                 Our Solutions
               </h2>
-              <p className="text-gray-200 font-semibold text-[24px] sm:text-[28px] md:text-[32px]">
+              <p className="text-gray-200 font-semibold text-[16px] sm:text-[20px] md:text-[26px] lg:text-[32px]">
                 We provide all type of modular <br />
-                <span className="text-primary text-[24px] sm:text-[28px] md:text-[32px] font-semibold tracking-wide">
+                <span className="text-primary text-[16px] sm:text-[20px] md:text-[26px] lg:text-[32px] font-semibold tracking-wide">
                   KITCHEN, CLOSET, DOOR{" "}
                   <span className="normal-case text-gray-200">Services</span>
                 </span>
@@ -193,7 +193,7 @@ const Solution = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 mt-12 relative z-20">
+          <div className="grid grid-cols-1 gap-5 md:gap-6 lg:grid-cols-2 mt-8 lg:mt-12 relative z-20">
             {solutionsData.map((item) => (
               <div
                 key={item.id}
@@ -211,24 +211,24 @@ const Solution = () => {
 
                   <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent"></div>
 
-                  <div className="absolute left-[26px] top-[26px] flex h-14 w-14 items-center justify-center rounded-[10px] bg-white text-primary">
+                  <div className="absolute left-[16px] lg:left-[26px] top-[16px] lg:top-[26px] flex h-12 w-12 lg:h-14 lg:w-14 items-center justify-center rounded-[8px] lg:rounded-[10px] bg-white text-primary">
                     {item.icon}
                   </div>
                 </div>
 
-                <div className="flex flex-1 flex-row w-full items-center justify-between px-5 py-5">
+                <div className="flex flex-1 flex-col sm:flex-row w-full items-start sm:items-center justify-between px-4 lg:px-5 py-4 lg:py-5 gap-4 sm:gap-0">
                   <div>
-                    <h3 className="font-inter font-semibold text-[20px] sm:text-[22px] md:text-[24px] lg:text-[24px] leading-[1.3] text-white">
+                    <h3 className="font-inter font-semibold text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] leading-[1.3] text-white">
                       {item.title}
                     </h3>
-                    <p className="font-inter font-normal text-[14px] sm:text-[15px] md:text-[16px] lg:text-[16px] leading-[1.5] text-white/90">
+                    <p className="font-inter font-normal text-[14px] md:text-[15px] lg:text-[16px] leading-[1.5] text-white/90 mt-1 sm:mt-0">
                       {item.description}
                     </p>
                   </div>
 
-                  <div className="mt-auto flex justify-end">
+                  <div className="mt-auto flex justify-end w-full sm:w-auto">
                     <button
-                      className="flex h-10 w-10 items-center justify-center rounded-[10px] bg-primary transition-all duration-300 group-hover:bg-[#4aaeb0] group-hover:shadow-[0_0_20px_rgb(var(--primary)_/_0.4)]"
+                      className="flex h-10 w-10 items-center justify-center rounded-[8px] lg:rounded-[10px] bg-primary transition-all duration-300 group-hover:bg-[#4aaeb0] group-hover:shadow-[0_0_20px_rgb(var(--primary)_/_0.4)]"
                       aria-label={`Learn more about ${item.title}`}
                     >
                       <ArrowRight className="h-4 w-4 text-white" />
@@ -239,12 +239,12 @@ const Solution = () => {
             ))}
           </div>
 
-          <div className="mt-16 flex justify-center pb-8 solution-card">
+          <div className="mt-12 lg:mt-16 flex justify-center pb-6 lg:pb-8 solution-card">
             <Button
               text="Explore Our Projects"
               icon={<ArrowRight size={18} />}
               iconPosition="right"
-              className="hover:bg-[#4aaeb0] inline-flex items-center gap-2 rounded-[8px] bg-primary px-6 py-3 text-base font-medium text-white transition-all duration-300 w-[236px] h-[52px]"
+              className="hover:bg-[#4aaeb0] inline-flex items-center gap-2 rounded-[8px] bg-primary px-5 lg:px-6 py-3 text-sm lg:text-base font-medium text-white transition-all duration-300 w-[200px] lg:w-[236px] h-[46px] lg:h-[52px]"
             />
           </div>
         </div>
