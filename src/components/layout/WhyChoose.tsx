@@ -1,4 +1,5 @@
 import { CheckCircle2, Phone } from "lucide-react";
+import Image from "next/image";
 
 const WhyChoose = () => {
   const benefits = [
@@ -10,32 +11,33 @@ const WhyChoose = () => {
 
   return (
     <section className="bg-white py-[100px] lg:py-28">
-      <div className="mx-auto max-w-6xl rounded-[2rem] bg-gradient-to-t from-primary to-black px-6 py-12 sm:px-8 sm:py-16 lg:px-[60px] lg:py-[80px] text-white">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          <div className="flex justify-center lg:justify-start w-full">
-            <div className="relative w-full max-w-[500px] aspect-[4/3] flex items-center justify-center">
-              <span className="text-white/50 border border-white/20 p-10 rounded-xl border-dashed">
-                3D Isometric Kitchen Image
-              </span>
-              {/* If using Next.js Image: 
-                 <Image src="/path-to-image.png" alt="3D Kitchen" fill className="object-contain" /> 
-              */}
+      <div className="mx-auto max-w-6xl rounded-[2rem] bg-gradient-to-t from-primary to-black text-white  ">
+        <div className="flex flex-row items-center justify-center gap-x-[50px]">
+          <div className="relative h-[363px] w-[560px] overflow-visible">
+            <div className="">
+              <Image
+                src="/assets/chooseIdealFactory.png"
+                alt="3D Kitchen"
+                width={560}
+                height={452}
+                className="absolute top-12 left-0 w-full max-w-[560px]"
+              />
             </div>
           </div>
 
-          <div className="flex flex-col gap-8">
-            <h2 className="font-bold text-[30px] sm:text-[34px] md:text-[40px] lg:text-[40px] leading-[150%] align-middle">
+          <div className="flex flex-col gap-y-3.5 pt-[69px] pr-[55px] pb-[63px]">
+            <h2 className="font-bold text-[30px] sm:text-[34px] md:text-[38px] lg:text-[40px] leading-[150%]  align-middle">
               Why Villa Owners Choose <br className="hidden md:block" />
               Ideal Factory
             </h2>
 
-            <ul className="flex flex-col gap-5">
+            <ul className="flex flex-col gap-2.5">
               {benefits.map((text, index) => (
                 <li key={index} className="flex items-start gap-4">
                   <div className="flex-shrink-0 mt-1">
                     <CheckCircle2 className="w-6 h-6 text-white fill-white/20" />
                   </div>
-                  <p className="text-base md:text-lg text-gray-100 leading-relaxed">
+                  <p className="font-inter font-normal text-[14px] sm:text-[15px] md:text-[16px] lg:text-[16px] leading-[150%] tracking-normal">
                     {text}
                   </p>
                 </li>
