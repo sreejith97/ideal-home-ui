@@ -1,14 +1,14 @@
 import { CheckCircle2, Phone } from "lucide-react";
 import Image from "next/image";
 
-const WhyChoose = () => {
-  const benefits = [
-    "One factory for kitchens, wardrobes, doors, and premium window systems.",
-    "Fast 3D design before production",
-    "Precision manufacturing with European machinery",
-    "Solutions designed for UAE villas",
-  ];
+const benefits = [
+  "One factory for kitchens, wardrobes, doors, and premium window systems.",
+  "Fast 3D design before production",
+  "Precision manufacturing with European machinery",
+  "Solutions designed for UAE villas",
+];
 
+const WhyChoose = () => {
   return (
     <section className="bg-white mb-[60px] md:mb-[80px] lg:mb-[100px]">
       <div className="mx-auto w-[92%] md:w-[95%] lg:w-full max-w-[1200px] rounded-[20px] lg:rounded-[2rem] bg-gradient-to-t from-primary to-black text-white">
