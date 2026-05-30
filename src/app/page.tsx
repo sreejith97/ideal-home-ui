@@ -1,4 +1,5 @@
 import Approach from "@/components/layout/Approach";
+import Contact from "@/components/layout/ContactUs";
 import Footer from "@/components/layout/Footer";
 import Gallery from "@/components/layout/Gallery";
 import Hero from "@/components/layout/Hero";
@@ -20,6 +21,7 @@ export default function HomePage() {
       <Gallery />
       <WhyChoose />
       <Testimonials />
+      <Contact />
       <Footer />
     </main>
   );
