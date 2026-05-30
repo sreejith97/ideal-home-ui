@@ -1,7 +1,6 @@
 "use client";
 import { useRef } from "react";
 import { ArrowRight, Shirt, ChefHat, DoorOpen, Scan } from "lucide-react";
-// import Button from "@/components/ui/Button";
 import Image from "next/image";
 
 import gsap from "gsap";
