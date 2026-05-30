@@ -6,16 +6,18 @@ import {
   PencilRuler,
 } from "lucide-react";
 import Button from "@/components/ui/Button";
+import Image from "next/image";
 
 const HowItWorks = () => {
   return (
     <section className="bg-white mb-[60px] md:mb-[80px] lg:mb-[100px]">
-      <div
-        className="relative overflow-hidden mx-auto w-[92%] md:w-[95%] lg:w-full max-w-[1200px] rounded-[20px] lg:rounded-[2rem] bg-secondary px-5 py-8 sm:px-8 sm:py-10 lg:px-[38px] lg:py-[50px] text-white bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: "url('/assets/design_background.jpg')",
-        }}
-      >
+      <div className="relative overflow-hidden mx-auto w-[92%] md:w-[95%] lg:w-full max-w-[1200px] rounded-[20px] lg:rounded-[2rem] bg-secondary px-5 py-8 sm:px-8 sm:py-10 lg:px-[38px] lg:py-[50px] text-white">
+        <Image
+          src="/assets/design_background.jpg"
+          alt="Design Background"
+          fill
+          className="object-cover object-center -z-10"
+        />
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10 flex flex-col lg:flex-row justify-between gap-10 lg:gap-8 items-center w-full">
           <div className="relative z-10 flex flex-col lg:flex-row justify-between gap-10 lg:gap-8 items-center w-full">

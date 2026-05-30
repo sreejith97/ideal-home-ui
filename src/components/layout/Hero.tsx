@@ -1,14 +1,17 @@
 import Button from "@/components/ui/Button";
 import { CircleArrowRight } from "lucide-react";
+import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section
-      className="relative h-screen bg-cover bg-center bg-no-repeat py-16 md:py-24 lg:py-32"
-      style={{
-        backgroundImage: "url('/assets/hero_background.jpg')",
-      }}
-    >
+    <section className="relative h-screen py-16 md:py-24 lg:py-32">
+      <Image
+        src="/assets/hero_background.jpg"
+        alt="Hero Background"
+        fill
+        priority
+        className="object-cover object-center -z-10"
+      />
       <div className="absolute inset-0 bg-black/40" />
 
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 lg:translate-x-0 lg:translate-y-0 lg:top-[248px] lg:left-[143px] w-[90%] sm:w-[480px] md:w-[540px] lg:w-[632px] h-auto lg:h-[423px] rounded-[10px] px-6 py-8 lg:px-[30px] lg:py-[46px] gap-[21px] bg-[#0E0B0B75] backdrop-blur-[4px]">
