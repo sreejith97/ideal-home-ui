@@ -1,5 +1,6 @@
 import { Menu, Phone } from "lucide-react";
 import Button from "@/components/ui/Button";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -10,13 +11,13 @@ const Navbar = () => {
 
           <ul className="hidden lg:flex items-center gap-x-6 font-normal text-[18px] font-inter">
             <li>
-              <a href="/">Home</a>
+              <Link href="/">Home</Link>
             </li>
             <li>
-              <a href="/about">About</a>
+              <Link href="/about">About</Link>
             </li>
             <li>
-              <a href="/contact">Contact Us</a>
+              <Link href="/contact">Contact Us</Link>
             </li>
           </ul>
         </div>
