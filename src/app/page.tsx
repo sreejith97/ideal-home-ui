@@ -1,14 +1,15 @@
-import Approach from "@/components/layout/Approach";
-import Contact from "@/components/layout/ContactUs";
-import Footer from "@/components/layout/Footer";
-import Gallery from "@/components/layout/Gallery";
+import dynamic from "next/dynamic";
 import Hero from "@/components/layout/Hero";
-import HowItWorks from "@/components/layout/HowItWorks";
 import Navbar from "@/components/layout/Navbar";
-import Solution from "@/components/layout/Solution";
-import Testimonials from "@/components/layout/Testimonials";
-import WhyChoose from "@/components/layout/WhyChoose";
-import Image from "next/image";
+
+const Solution = dynamic(() => import("@/components/layout/Solution"));
+const Approach = dynamic(() => import("@/components/layout/Approach"));
+const HowItWorks = dynamic(() => import("@/components/layout/HowItWorks"));
+const Gallery = dynamic(() => import("@/components/layout/Gallery"));
+const WhyChoose = dynamic(() => import("@/components/layout/WhyChoose"));
+const Testimonials = dynamic(() => import("@/components/layout/Testimonials"));
+const Contact = dynamic(() => import("@/components/layout/ContactUs"));
+const Footer = dynamic(() => import("@/components/layout/Footer"));
 
 export default function HomePage() {
   return (
