@@ -3,7 +3,7 @@ import Button from "../ui/Button";
 const Contact = () => {
   return (
     <section className="bg-linear-to-t from-secondary to-[#000000] py-[58px] px-[121px] ">
-      <div className="mx-auto max-w-6xl rounded-[2rem] text-white">
+      <div className="mx-auto max-w-[1200px] rounded-[2rem] text-white">
         <div className="flex flex-row gap-[65px] items-center relative z-10">
           <div className="flex flex-col">
             <Button

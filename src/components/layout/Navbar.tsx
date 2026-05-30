@@ -3,7 +3,7 @@ import Button from "@/components/ui/Button";
 
 const Navbar = () => {
   return (
-    <div className="absolute text-white top-[42px] left-1/2 -translate-x-1/2 z-10 w-full max-w-[1200px] h-[77px]  bg-[#00000069] backdrop-blur-[4px] rounded-[16px] px-6">
+    <div className="fixed text-white top-[42px] left-1/2 -translate-x-1/2 z-50 w-full max-w-[1200px] h-[77px]  bg-[#00000069] backdrop-blur-[4px] rounded-[16px] px-6">
       <div className="flex items-center justify-between h-full">
         <div className="flex items-center gap-x-[38px]">
           <Menu className="w-9 h-9 cursor-pointer" />

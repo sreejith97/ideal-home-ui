@@ -11,7 +11,7 @@ const WhyChoose = () => {
 
   return (
     <section className="bg-white mb-[100px]">
-      <div className="mx-auto max-w-6xl rounded-[2rem] bg-gradient-to-t from-primary to-black text-white  ">
+      <div className="mx-auto max-w-[1200px] rounded-[2rem] bg-gradient-to-t from-primary to-black text-white  ">
         <div className="flex flex-row items-center justify-center gap-x-[50px]">
           <div className="relative h-[363px] w-[560px] overflow-visible">
             <div className="">

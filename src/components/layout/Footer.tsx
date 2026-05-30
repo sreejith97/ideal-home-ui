@@ -3,7 +3,7 @@ import { Globe, Mail, Phone } from "lucide-react";
 const Footer = () => {
   return (
     <section className="w-full bg-black py-20">
-      <div className="mx-auto max-w-6xl  text-white">
+      <div className="mx-auto max-w-[1200px]  text-white">
         <div className="flex flex-col w-full">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 w-full">
             <div className="flex flex-col gap-4">

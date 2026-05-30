@@ -11,7 +11,7 @@ const HowItWorks = () => {
   return (
     <section className="bg-white mb-[100px]  ">
       <div
-        className=" relative overflow-hidden mx-auto max-w-6xl rounded-[2rem] bg-secondary px-6 py-8 sm:px-8 sm:py-10 lg:px-[38px] lg:py-[50px] text-white bg-cover bg-center bg-no-repeat"
+        className=" relative overflow-hidden mx-auto max-w-[1200px] rounded-[2rem] bg-secondary px-6 py-8 sm:px-8 sm:py-10 lg:px-[38px] lg:py-[50px] text-white bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: "url('/assets/design_background.jpg')",
         }}

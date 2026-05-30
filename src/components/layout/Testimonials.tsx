@@ -4,7 +4,7 @@ const Testimonials = () => {
   return (
     <section className="bg-white ">
       <div className="mx-auto   bg-[#231F20] px-6 py-12 sm:px-8 sm:py-16 lg:px-[60px] lg:py-[80px] text-white">
-        <div className="flex flex-row items-start justify-center gap-12 lg:gap-8 items-center max-w-6xl mx-auto ">
+        <div className="flex flex-row items-start justify-center gap-12 lg:gap-8 items-center max-w-[1200px] mx-auto ">
           <div className="flex flex-col justify-center lg:col-span-4 gap-8">
             <div className="flex flex-col gap-3 max-w-[436px] w-full">
               <h4 className="text-primary font-inter font-semibold text-[20px] sm:text-[22px] md:text-[24px] lg:text-[24px] leading-[130%] align-middle">
