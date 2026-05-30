@@ -104,6 +104,22 @@ const Solution = () => {
             className="h-full w-full"
           >
             <defs>
+              <pattern
+                id="texture-bg"
+                patternUnits="userSpaceOnUse"
+                width="1920"
+                height="1080"
+              >
+                <image
+                  href="/assets/solution_bg_pattern.jpg"
+                  x="0"
+                  y="0"
+                  width="1920"
+                  height="1080"
+                  preserveAspectRatio="xMidYMid slice"
+                />
+                <rect width="1920" height="1080" fill="#000000" opacity="0.6" />
+              </pattern>
               <mask id="simpleTextMask">
                 <rect width="1920" height="1080" fill="white" />
                 <g
@@ -129,8 +145,9 @@ const Solution = () => {
             <rect
               width="1920"
               height="1080"
-              fill="#171717"
+              fill="url(#texture-bg)"
               mask="url(#simpleTextMask)"
+              className="pointer-events-auto"
             />
 
             <g
