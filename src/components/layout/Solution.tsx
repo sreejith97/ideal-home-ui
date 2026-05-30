@@ -87,7 +87,7 @@ const Solution = () => {
   return (
     <div
       ref={containerRef}
-      className="relative bg-neutral-950 font-sans text-neutral-200"
+      className="relative bg-neutral-950 font-sans text-neutral-200 mb-[100px]"
     >
       <div className="zoom-trigger absolute top-0 left-0 w-full h-[150vh] pointer-events-none" />
 

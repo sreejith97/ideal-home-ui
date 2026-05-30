@@ -2,7 +2,7 @@ import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 
 const Testimonials = () => {
   return (
-    <section className="bg-white py-[100px] lg:py-28">
+    <section className="bg-white ">
       <div className="mx-auto   bg-[#231F20] px-6 py-12 sm:px-8 sm:py-16 lg:px-[60px] lg:py-[80px] text-white">
         <div className="flex flex-row items-start justify-center gap-12 lg:gap-8 items-center max-w-6xl mx-auto ">
           <div className="flex flex-col justify-center lg:col-span-4 gap-8">

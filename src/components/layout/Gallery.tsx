@@ -3,7 +3,7 @@ import Button from "@/components/ui/Button";
 
 const Gallery = () => {
   return (
-    <section className="bg-[#222222] py-16 lg:py-24">
+    <section className="bg-[#222222] py-16 lg:py-24 mb-[100px]">
       <div className="mx-auto max-w-6xl  sm:px-8 lg:px-0">
         <div className="text-center mb-8">
           <h2 className="font-semibold text-[22px] sm:text-[24px] md:text-[28px] lg:text-[28px] leading-[100%] text-center align-middle text-white">

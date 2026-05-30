@@ -9,7 +9,7 @@ import Image from "next/image";
 
 const Approach = () => {
   return (
-    <section className="bg-white py-[100px] lg:py-28">
+    <section className="bg-white mb-[100px] ">
       <div className="mx-auto max-w-6xl rounded-[2rem] bg-secondary px-6 py-8 sm:px-8 sm:py-10 lg:px-[38px] lg:py-[50px] text-white">
         <div>
           <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-[2.6rem] ">
