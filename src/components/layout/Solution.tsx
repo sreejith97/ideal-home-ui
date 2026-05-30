@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { ArrowRight, Shirt, ChefHat, DoorOpen, Scan } from "lucide-react";
 import Button from "@/components/ui/Button";
 
@@ -34,12 +34,14 @@ const solutionsData = [
 ];
 
 const Solution = () => {
+  const mainSectionRef = useRef<HTMLElement>(null);
   return (
     <section
       className="relative min-h-screen py-16  bg-[#1a1a1a] text-white"
       style={{
         backgroundImage: "url('/assets/solution_background.jpg')",
       }}
+      ref={mainSectionRef}
     >
       <div className="absolute inset-0 bg-black/60" />
       <div className="max-w-[1348px] mx-auto relative z-10">
