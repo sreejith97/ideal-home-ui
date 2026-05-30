@@ -122,6 +122,66 @@ const Solution = () => {
           className="background-image absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: "url('/assets/solution_background.jpg')" }}
         />
+
+        <div className="svg-overlay absolute inset-0 pointer-events-none">
+          <svg
+            viewBox="0 0 1920 1080"
+            preserveAspectRatio="xMidYMid slice"
+            className="h-full w-full"
+          >
+            <defs>
+              <mask id="simpleTextMask">
+                <rect width="1920" height="1080" fill="white" />
+                <g
+                  className="text-to-zoom"
+                  fontFamily="system-ui, sans-serif"
+                  fontWeight="900"
+                  fontSize="250"
+                  textAnchor="middle"
+                >
+                  <text x="960" y="300" fill="black">
+                    OUR
+                  </text>
+                  <text x="960" y="550" fill="black">
+                    INTERIOR
+                  </text>
+                  <text x="960" y="800" fill="black">
+                    SOLUTIONS
+                  </text>
+                </g>
+              </mask>
+            </defs>
+
+            <rect
+              width="1920"
+              height="1080"
+              fill="#171717"
+              mask="url(#simpleTextMask)"
+              className="pointer-events-auto"
+            />
+
+            <g
+              className="text-to-zoom"
+              fontFamily="system-ui, sans-serif"
+              fontWeight="900"
+              fontSize="250"
+              textAnchor="middle"
+              fill="none"
+              stroke="white"
+              strokeWidth="4"
+            >
+              <text x="960" y="300">
+                OUR
+              </text>
+              <text x="960" y="550">
+                INTERIOR
+              </text>
+              <text x="960" y="800">
+                SOLUTIONS
+              </text>
+            </g>
+          </svg>
+        </div>
       </section>
     </div>
   );
