@@ -5,6 +5,7 @@ import Button from "@/components/ui/Button";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
 
 const solutionsData = [
   {
@@ -203,10 +204,12 @@ const Solution = () => {
                   className="relative overflow-hidden"
                   style={{ height: "clamp(220px, 28vh, 320px)" }}
                 >
-                  <img
+                  <Image
                     src={item.image}
                     alt={item.title}
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
                   />
 
                   <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent"></div>

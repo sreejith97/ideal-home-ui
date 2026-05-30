@@ -1,5 +1,5 @@
-import React from "react";
 import Button from "@/components/ui/Button";
+import Image from "next/image";
 
 const Gallery = () => {
   return (
@@ -27,58 +27,72 @@ const Gallery = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-4 auto-rows-[250px] md:auto-rows-[300px] gap-2.5 h-auto md:h-[988px] max-h-none md:max-h-[988px] mb-8 md:mb-0">
           <div className="md:col-span-2 md:row-span-2 rounded-[10px] overflow-hidden bg-neutral-800 relative group">
-            <img
+            <Image
               src="/assets/project_1.png"
               alt="Kitchen"
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
             />
           </div>
 
           <div className="md:col-span-1 md:row-span-1 rounded-[10px] overflow-hidden bg-neutral-800 relative group">
-            <img
+            <Image
               src="/assets/project_2.jpg"
               alt="Windows"
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              fill
+              sizes="(max-width: 768px) 100vw, 25vw"
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
             />
           </div>
 
           <div className="md:col-span-1 md:row-span-1 rounded-[10px] overflow-hidden bg-neutral-800 relative group">
-            <img
+            <Image
               src="/assets/project_3.png"
               alt="Second Kitchen"
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              fill
+              sizes="(max-width: 768px) 100vw, 25vw"
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
             />
           </div>
 
           <div className="md:col-span-2 md:row-span-1 rounded-[10px] overflow-hidden bg-neutral-800 relative group">
-            <img
+            <Image
               src="/assets/project_4.jpg"
               alt="Livingroom"
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
             />
           </div>
 
           <div className="md:col-span-2 md:row-span-1 rounded-[10px] overflow-hidden bg-neutral-800 relative group">
-            <img
+            <Image
               src="/assets/project_5.png"
               alt="Closet"
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
             />
           </div>
 
           <div className="md:col-span-1 md:row-span-1 rounded-[10px] overflow-hidden bg-neutral-800 relative group">
-            <img
+            <Image
               src="/assets/project_6.png"
               alt="Door"
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              fill
+              sizes="(max-width: 768px) 100vw, 25vw"
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
             />
           </div>
 
           <div className="md:col-span-1 md:row-span-1 rounded-[10px] overflow-hidden bg-neutral-800 relative group">
-            <img
+            <Image
               src="/assets/project_7.jpg"
               alt="Livingroom"
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              fill
+              sizes="(max-width: 768px) 100vw, 25vw"
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
             />
           </div>
         </div>
